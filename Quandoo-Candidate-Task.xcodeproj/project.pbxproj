@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012B9FA41F29489E000F1762 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B9FA31F29489E000F1762 /* AppDelegate.swift */; };
+		012B9FA61F29489E000F1762 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B9FA51F29489E000F1762 /* FirstViewController.swift */; };
+		012B9FA81F29489E000F1762 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B9FA71F29489E000F1762 /* SecondViewController.swift */; };
+		012B9FAB1F29489E000F1762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012B9FA91F29489E000F1762 /* Main.storyboard */; };
+		012B9FAD1F29489E000F1762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012B9FAC1F29489E000F1762 /* Assets.xcassets */; };
+		012B9FB01F29489E000F1762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012B9FAE1F29489E000F1762 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		012B9FA01F29489E000F1762 /* Quandoo-Candidate-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quandoo-Candidate-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		012B9FA31F29489E000F1762 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		012B9FA51F29489E000F1762 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		012B9FA71F29489E000F1762 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		012B9FAA1F29489E000F1762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		012B9FAC1F29489E000F1762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		012B9FAF1F29489E000F1762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		012B9FB11F29489E000F1762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		012B9F9D1F29489E000F1762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		012B9F971F29489E000F1762 = {
+			isa = PBXGroup;
+			children = (
+				012B9FA21F29489E000F1762 /* Quandoo-Candidate-Task */,
+				012B9FA11F29489E000F1762 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		012B9FA11F29489E000F1762 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				012B9FA01F29489E000F1762 /* Quandoo-Candidate-Task.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		012B9FA21F29489E000F1762 /* Quandoo-Candidate-Task */ = {
+			isa = PBXGroup;
+			children = (
+				012B9FB71F2948EB000F1762 /* AppDelegate */,
+				012B9FBD1F294991000F1762 /* View Controllers */,
+				012B9FBE1F29499B000F1762 /* Views */,
+				012B9FB91F294968000F1762 /* Models */,
+				012B9FBA1F294973000F1762 /* Networking */,
+				012B9FB81F294956000F1762 /* Extensions */,
+				012B9FBC1F294985000F1762 /* Supporting Files */,
+				012B9FBB1F29497A000F1762 /* Resources */,
+			);
+			path = "Quandoo-Candidate-Task";
+			sourceTree = "<group>";
+		};
+		012B9FB71F2948EB000F1762 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				012B9FA31F29489E000F1762 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		012B9FB81F294956000F1762 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		012B9FB91F294968000F1762 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		012B9FBA1F294973000F1762 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		012B9FBB1F29497A000F1762 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				012B9FAC1F29489E000F1762 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		012B9FBC1F294985000F1762 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				012B9FB11F29489E000F1762 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		012B9FBD1F294991000F1762 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				012B9FA51F29489E000F1762 /* FirstViewController.swift */,
+				012B9FA71F29489E000F1762 /* SecondViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		012B9FBE1F29499B000F1762 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				012B9FA91F29489E000F1762 /* Main.storyboard */,
+				012B9FAE1F29489E000F1762 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		012B9F9F1F29489E000F1762 /* Quandoo-Candidate-Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012B9FB41F29489E000F1762 /* Build configuration list for PBXNativeTarget "Quandoo-Candidate-Task" */;
+			buildPhases = (
+				012B9F9C1F29489E000F1762 /* Sources */,
+				012B9F9D1F29489E000F1762 /* Frameworks */,
+				012B9F9E1F29489E000F1762 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quandoo-Candidate-Task";
+			productName = "Quandoo-Candidate-Task";
+			productReference = 012B9FA01F29489E000F1762 /* Quandoo-Candidate-Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		012B9F981F29489E000F1762 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Quandoo GmbH";
+				TargetAttributes = {
+					012B9F9F1F29489E000F1762 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = LG4XB4J5E3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 012B9F9B1F29489E000F1762 /* Build configuration list for PBXProject "Quandoo-Candidate-Task" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 012B9F971F29489E000F1762;
+			productRefGroup = 012B9FA11F29489E000F1762 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				012B9F9F1F29489E000F1762 /* Quandoo-Candidate-Task */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		012B9F9E1F29489E000F1762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012B9FB01F29489E000F1762 /* LaunchScreen.storyboard in Resources */,
+				012B9FAD1F29489E000F1762 /* Assets.xcassets in Resources */,
+				012B9FAB1F29489E000F1762 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		012B9F9C1F29489E000F1762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012B9FA81F29489E000F1762 /* SecondViewController.swift in Sources */,
+				012B9FA41F29489E000F1762 /* AppDelegate.swift in Sources */,
+				012B9FA61F29489E000F1762 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		012B9FA91F29489E000F1762 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				012B9FAA1F29489E000F1762 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		012B9FAE1F29489E000F1762 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				012B9FAF1F29489E000F1762 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		012B9FB21F29489E000F1762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		012B9FB31F29489E000F1762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		012B9FB51F29489E000F1762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LG4XB4J5E3;
+				INFOPLIST_FILE = "Quandoo-Candidate-Task/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmad.atef.Quandoo-Candidate-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		012B9FB61F29489E000F1762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LG4XB4J5E3;
+				INFOPLIST_FILE = "Quandoo-Candidate-Task/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmad.atef.Quandoo-Candidate-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		012B9F9B1F29489E000F1762 /* Build configuration list for PBXProject "Quandoo-Candidate-Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012B9FB21F29489E000F1762 /* Debug */,
+				012B9FB31F29489E000F1762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		012B9FB41F29489E000F1762 /* Build configuration list for PBXNativeTarget "Quandoo-Candidate-Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012B9FB51F29489E000F1762 /* Debug */,
+				012B9FB61F29489E000F1762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 012B9F981F29489E000F1762 /* Project object */;
+}
