@@ -19,7 +19,13 @@
 		012B9FD31F294D12000F1762 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B9FD21F294D12000F1762 /* Address.swift */; };
 		012B9FD51F294D26000F1762 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B9FD41F294D26000F1762 /* Company.swift */; };
 		012B9FD71F295268000F1762 /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 012B9FD61F295268000F1762 /* Users.plist */; };
-		012B9FDC1F295407000F1762 /* UserCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B9FDB1F295407000F1762 /* UserCollection.swift */; };
+		012B9FDC1F295407000F1762 /* LocalUserCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B9FDB1F295407000F1762 /* LocalUserCollection.swift */; };
+		012B9FDE1F29622F000F1762 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B9FDD1F29622F000F1762 /* UserService.swift */; };
+		012B9FE01F296304000F1762 /* TaskServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B9FDF1F296304000F1762 /* TaskServiceError.swift */; };
+		012B9FE21F2963AC000F1762 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B9FE11F2963AC000F1762 /* Post.swift */; };
+		012B9FE41F296AD9000F1762 /* CloudUserCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B9FE31F296AD9000F1762 /* CloudUserCollection.swift */; };
+		012B9FE71F297349000F1762 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B9FE61F297349000F1762 /* Router.swift */; };
+		C0D359E20F1B360C29322165 /* Pods_Quandoo_Candidate_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D91134A44A4485F5142C4A /* Pods_Quandoo_Candidate_Task.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +43,15 @@
 		012B9FD21F294D12000F1762 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		012B9FD41F294D26000F1762 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		012B9FD61F295268000F1762 /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
-		012B9FDB1F295407000F1762 /* UserCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollection.swift; sourceTree = "<group>"; };
+		012B9FDB1F295407000F1762 /* LocalUserCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalUserCollection.swift; sourceTree = "<group>"; };
+		012B9FDD1F29622F000F1762 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		012B9FDF1F296304000F1762 /* TaskServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskServiceError.swift; sourceTree = "<group>"; };
+		012B9FE11F2963AC000F1762 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		012B9FE31F296AD9000F1762 /* CloudUserCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudUserCollection.swift; sourceTree = "<group>"; };
+		012B9FE61F297349000F1762 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		10EE1673EE96B62A0C3179FE /* Pods-Quandoo-Candidate-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quandoo-Candidate-Task.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quandoo-Candidate-Task/Pods-Quandoo-Candidate-Task.release.xcconfig"; sourceTree = "<group>"; };
+		73555CA68948B721A91BFECB /* Pods-Quandoo-Candidate-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quandoo-Candidate-Task.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quandoo-Candidate-Task/Pods-Quandoo-Candidate-Task.debug.xcconfig"; sourceTree = "<group>"; };
+		C9D91134A44A4485F5142C4A /* Pods_Quandoo_Candidate_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quandoo_Candidate_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D359E20F1B360C29322165 /* Pods_Quandoo_Candidate_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +71,8 @@
 			children = (
 				012B9FA21F29489E000F1762 /* Quandoo-Candidate-Task */,
 				012B9FA11F29489E000F1762 /* Products */,
+				7E5F16C82F97340443252DF5 /* Pods */,
+				173FFB29C0465F13EDF3E48B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +87,7 @@
 		012B9FA21F29489E000F1762 /* Quandoo-Candidate-Task */ = {
 			isa = PBXGroup;
 			children = (
+				012B9FE51F297322000F1762 /* Helpers */,
 				012B9FB71F2948EB000F1762 /* AppDelegate */,
 				012B9FB91F294968000F1762 /* Models */,
 				012B9FD81F29537B000F1762 /* ViewModel */,
@@ -106,6 +124,7 @@
 				012B9FD21F294D12000F1762 /* Address.swift */,
 				012B9FD01F294D06000F1762 /* Geo.swift */,
 				012B9FD41F294D26000F1762 /* Company.swift */,
+				012B9FE11F2963AC000F1762 /* Post.swift */,
 			);
 			name = Models;
 			path = Model;
@@ -156,9 +175,37 @@
 		012B9FD81F29537B000F1762 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				012B9FDB1F295407000F1762 /* UserCollection.swift */,
+				012B9FE31F296AD9000F1762 /* CloudUserCollection.swift */,
+				012B9FDB1F295407000F1762 /* LocalUserCollection.swift */,
+				012B9FDD1F29622F000F1762 /* UserService.swift */,
+				012B9FDF1F296304000F1762 /* TaskServiceError.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		012B9FE51F297322000F1762 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				012B9FE61F297349000F1762 /* Router.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		173FFB29C0465F13EDF3E48B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9D91134A44A4485F5142C4A /* Pods_Quandoo_Candidate_Task.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E5F16C82F97340443252DF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73555CA68948B721A91BFECB /* Pods-Quandoo-Candidate-Task.debug.xcconfig */,
+				10EE1673EE96B62A0C3179FE /* Pods-Quandoo-Candidate-Task.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 012B9FB41F29489E000F1762 /* Build configuration list for PBXNativeTarget "Quandoo-Candidate-Task" */;
 			buildPhases = (
+				B3C05B4C45CAD56DB465B6D8 /* [CP] Check Pods Manifest.lock */,
 				012B9F9C1F29489E000F1762 /* Sources */,
 				012B9F9D1F29489E000F1762 /* Frameworks */,
 				012B9F9E1F29489E000F1762 /* Resources */,
+				180DFC66212F29E2511B52A6 /* [CP] Embed Pods Frameworks */,
+				3310E1A2D14717AA6F09431A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,19 +282,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		180DFC66212F29E2511B52A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quandoo-Candidate-Task/Pods-Quandoo-Candidate-Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3310E1A2D14717AA6F09431A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quandoo-Candidate-Task/Pods-Quandoo-Candidate-Task-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3C05B4C45CAD56DB465B6D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		012B9F9C1F29489E000F1762 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				012B9FD31F294D12000F1762 /* Address.swift in Sources */,
+				012B9FE21F2963AC000F1762 /* Post.swift in Sources */,
+				012B9FE01F296304000F1762 /* TaskServiceError.swift in Sources */,
 				012B9FCF1F294CC4000F1762 /* User.swift in Sources */,
-				012B9FDC1F295407000F1762 /* UserCollection.swift in Sources */,
+				012B9FDE1F29622F000F1762 /* UserService.swift in Sources */,
+				012B9FDC1F295407000F1762 /* LocalUserCollection.swift in Sources */,
+				012B9FE41F296AD9000F1762 /* CloudUserCollection.swift in Sources */,
 				012B9FC51F294C52000F1762 /* AppDelegate.swift in Sources */,
 				012B9FC31F294C42000F1762 /* SecondViewController.swift in Sources */,
 				012B9FD51F294D26000F1762 /* Company.swift in Sources */,
 				012B9FC21F294C42000F1762 /* FirstViewController.swift in Sources */,
 				012B9FD11F294D06000F1762 /* Geo.swift in Sources */,
+				012B9FE71F297349000F1762 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +451,7 @@
 		};
 		012B9FB51F29489E000F1762 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73555CA68948B721A91BFECB /* Pods-Quandoo-Candidate-Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -364,6 +468,7 @@
 		};
 		012B9FB61F29489E000F1762 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10EE1673EE96B62A0C3179FE /* Pods-Quandoo-Candidate-Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -396,6 +501,7 @@
 				012B9FB61F29489E000F1762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

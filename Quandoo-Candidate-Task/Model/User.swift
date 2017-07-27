@@ -32,7 +32,9 @@ public struct User {
             let username = dictionary["username"] as? String,
             let email = dictionary["email"] as? String,
             let phone = dictionary["phone"] as? String,
-            let website = dictionary["website"] as? String  else {
+            let website = dictionary["website"] as? String,
+            let company = dictionary["company"] as? [String : Any],
+            let address = dictionary["address"] as? [String : Any]else {
             return nil
         }
         
@@ -40,10 +42,10 @@ public struct User {
         self.name = name
         self.username = username
         self.email = email
-        self.address = Address(street: "", suite: "", city: "", zipcode: "", geo: Geo(lat: "", lng: ""))
+        self.address = Address(dictionary: address)!
         self.phone = phone
         self.website = website
-        self.company = Company(name: "", catchPhrase: "", bs: "")
+        self.company = Company(dictionary: company)!
     }
     
     

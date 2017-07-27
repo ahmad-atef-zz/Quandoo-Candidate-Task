@@ -11,10 +11,37 @@
 		<string>Abo3aTef</string>
 		<key>email</key>
 		<string>ahmad.atef.ali.ahmad@gmail.com</string>
+		<key>address</key>
+		<dict>
+			<key>street</key>
+			<string>37 Ahmad El Sawy Street</string>
+			<key>suite</key>
+			<string>Apt. 556</string>
+			<key>city</key>
+			<string>Gwenborough</string>
+			<key>zipcode</key>
+			<string>123123123</string>
+			<key>geo</key>
+			<dict>
+				<key>lat</key>
+				<string>-37.3159</string>
+				<key>lng</key>
+				<string>81.1496</string>
+			</dict>
+		</dict>
 		<key>phone</key>
 		<string>01090535013</string>
 		<key>website</key>
 		<string>https://ahmadatefblog.wordpress.com</string>
+		<key>company</key>
+		<dict>
+			<key>name</key>
+			<string>Romaguera-Crona</string>
+			<key>catchPhrase</key>
+			<string>asdaskjdghasdkajhgsdkjahgsd Romaguera-Crona</string>
+			<key>bs</key>
+			<string>askjhdgaskjdhgakjsahd asdjhgasdkjhagsd Romaguera-CronaRomaguera-Crona</string>
+		</dict>
 	</dict>
 	<dict>
 		<key>id</key>
@@ -25,10 +52,37 @@
 		<string>Ranonah</string>
 		<key>email</key>
 		<string>Rana.Osamah@gmail.com</string>
+		<key>address</key>
+		<dict>
+			<key>street</key>
+			<string>37 Ahmad El Sawy Street</string>
+			<key>suite</key>
+			<string>Apt. 556</string>
+			<key>city</key>
+			<string>Gwenborough</string>
+			<key>zipcode</key>
+			<string>123123123</string>
+			<key>geo</key>
+			<dict>
+				<key>lat</key>
+				<string>-37.3159</string>
+				<key>lng</key>
+				<string>81.1496</string>
+			</dict>
+		</dict>
 		<key>phone</key>
 		<string>01147083359</string>
 		<key>website</key>
 		<string>https://rana.osamahablog.wordpress.com</string>
+		<key>company</key>
+		<dict>
+			<key>name</key>
+			<string>Romaguera-Crona</string>
+			<key>catchPhrase</key>
+			<string>asdaskjdghasdkajhgsdkjahgsd Romaguera-Crona</string>
+			<key>bs</key>
+			<string>askjhdgaskjdhgakjsahd asdjhgasdkjhagsd Romaguera-CronaRomaguera-Crona</string>
+		</dict>
 	</dict>
 	<dict>
 		<key>id</key>
@@ -39,10 +93,37 @@
 		<string>Jotube</string>
 		<key>email</key>
 		<string>youssef_therock@gmail.com</string>
+		<key>address</key>
+		<dict>
+			<key>street</key>
+			<string>37 Ahmad El Sawy Street</string>
+			<key>suite</key>
+			<string>Apt. 556</string>
+			<key>city</key>
+			<string>Gwenborough</string>
+			<key>zipcode</key>
+			<string>123123123</string>
+			<key>geo</key>
+			<dict>
+				<key>lat</key>
+				<string>-37.3159</string>
+				<key>lng</key>
+				<string>81.1496</string>
+			</dict>
+		</dict>
 		<key>phone</key>
 		<string>01115584660</string>
 		<key>website</key>
 		<string>https://Jo_TheRockblog.wordpress.com</string>
+		<key>company</key>
+		<dict>
+			<key>name</key>
+			<string>Romaguera-Crona</string>
+			<key>catchPhrase</key>
+			<string>asdaskjdghasdkajhgsdkjahgsd Romaguera-Crona</string>
+			<key>bs</key>
+			<string>askjhdgaskjdhgakjsahd asdjhgasdkjhagsd Romaguera-CronaRomaguera-Crona</string>
+		</dict>
 	</dict>
 </array>
 </plist>

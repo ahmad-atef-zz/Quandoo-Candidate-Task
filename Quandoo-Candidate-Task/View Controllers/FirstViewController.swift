@@ -9,13 +9,22 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        UserCollection().loadUsers()
-        
+        LocalUserCollection().loadUsers(onSuccess: { (users) in
+            print(users.count)
+        }) { (error) in
+            print(error.description)
+        }
+     
+        CloudUserCollection().loadUsers(onSuccess: { (users) in
+            print(users.count)
+        }) { (error) in
+            print(error)
+        }
     }
 }
 
