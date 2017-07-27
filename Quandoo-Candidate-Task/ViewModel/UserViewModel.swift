@@ -22,7 +22,7 @@ public protocol UserViewable {
 
 // MARK: - UserDataSourceProtcol
 /// Protocol for all User data source operations like loading data, from Cloud or Local service. Use this as a data source for View Model.
-protocol UserDataSourceProtcol {
+public protocol UserDataSourceProtcol {
     
     /// Use this method to list data from any diffrent services [Remote or Local].
     func loadData()
@@ -37,7 +37,7 @@ extension UserDataSourceProtcol{
     ///   - cell: to be Configured cell
     ///   - user: data for the cell
     /// - Returns: Readlly Configured cell
-    func setupCell(cell : UserCell, user :User) -> UserCell { return UserCell() }
+    public func setupCell(cell : UserCell, user :User) -> UserCell { return UserCell() }
 }
 
 
@@ -55,7 +55,7 @@ public enum DataCollectorType {
 public class UserViewModel : UserDataSourceProtcol{
     
     // MARK: - Injected Properties
-    let dataCollector : UserService = DataCollectorFactory.getDataCollection(type: .remote)
+    let dataCollector : UserService = UsersDataCollectorFactory.getDataCollection(type: .remote)
     private let delegateView : UserViewable
     
     // MARK: - Object Lifecycle
@@ -65,7 +65,7 @@ public class UserViewModel : UserDataSourceProtcol{
     
     
     // MARK: - UserDataSourceProtcol
-    func loadData(){
+    public func loadData(){
         delegateView.onDidStartLoading()
         dataCollector.loadUsers(onSuccess: { (result) in
             self.delegateView.onDidFinishLoadingData()
@@ -88,13 +88,13 @@ public class UserViewModel : UserDataSourceProtcol{
 
 
 
-
-public class DataCollectorFactory {
+//MARK: - UsersDataCollectorFactory -
+public class UsersDataCollectorFactory {
     
     /// Use this class method to generate UserService instance based on the dataCollectorType instance type.
     ///
     /// - Parameter type: DataCollectorType enum and based on thatm the type of Service are Returned.
-    /// - Returns: User seervice instance that can load users and load user posts.
+    /// - Returns: User service instance that can load users.
     class func getDataCollection(type : DataCollectorType) -> UserService {
         switch type {
         case .local:

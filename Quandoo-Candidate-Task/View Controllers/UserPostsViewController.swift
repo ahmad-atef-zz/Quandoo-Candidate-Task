@@ -12,12 +12,32 @@ class UserPostsViewController: UIViewController {
 
     //MARK: - Properties -
     var userObject : User?
-    
+    var viewModel : PostViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(userObject!.id)
-        print(userObject!.description)
+        viewModel = PostViewModel(view: self, userObject: userObject!)
+        loadUserPosts()
+        
     }
+    
+    func loadUserPosts() {
+        viewModel?.loadData()
+    }
+}
 
+
+
+extension UserPostsViewController : PostViewable{
+    func onDidStartLoading() {
+        print("Loading....")
+    }
+    
+    func onDidFinishLoadingData() {
+        
+    }
+    
+    func onDidFailLoadingDataWithError(error: String) {
+        print("onDidFailLoadingDataWithError: \(error).")
+    }
 }

@@ -45,7 +45,6 @@ class CloudUserCollection: UserService {
                     }
                 }
         }
-        
     }
     
     

@@ -34,7 +34,7 @@ class UsersViewController: UIViewController {
      
         let user = viewModel?.dataCollector.userAtIndex(index: indexPath.row)
         userPostsPage.userObject = user
-        print(user!.username)
+        
     }
 }
 

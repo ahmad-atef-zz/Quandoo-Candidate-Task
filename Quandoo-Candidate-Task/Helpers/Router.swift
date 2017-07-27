@@ -30,15 +30,23 @@ public enum Router : URLRequestConvertible{
     case listUserPosts(userId: String)
     
     public func asURLRequest() throws -> URLRequest{
+        
         let result : (path : String, method : HTTPMethod) = {
-            
             switch self {
             case .listUsers():
                 return ("users",.get)
             case .listUserPosts(let userId):
                 return("posts/\(userId)", .get)
             }
-            
+        }()
+        
+        let parameters: [String: Any] = {
+            switch self {
+            case .listUsers():
+                return [:]
+            case .listUserPosts(let userId):
+                return ["userId": userId]
+            }
         }()
         
         let url = URL(string: Router.baseURLString)
@@ -47,7 +55,6 @@ public enum Router : URLRequestConvertible{
         request.httpMethod = result.method.rawValue
         request.cachePolicy = .reloadIgnoringLocalAndRemoteCacheData
         request.timeoutInterval = timeoutInterval
-        
-        return request
+        return try URLEncoding.default.encode(request, with: parameters)
     }
 }

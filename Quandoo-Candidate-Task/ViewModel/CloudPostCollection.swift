@@ -7,26 +7,50 @@
 //
 
 import Foundation
+import Alamofire
 
 
-class CloudPostCollection: PostService {
-    
+
+public class CloudPostCollection: PostService {
     
     //MARK: - Private Properties -
     private var posts : [Post] = []
     
     
     //MARK: - PostService Methods -
-    func loadUserPosts(userId: String,
-                       onSuccess: @escaping ([Post]) -> (),
-                       onFailure: @escaping (TaskServiceError) -> ()) {
+    
+    public func loadUserPosts(userId: String,
+                              onSuccess: @escaping ([Post]) -> (),
+                              onFailure: @escaping (TaskServiceError) -> ()) {
+        
+        Alamofire.request(Router.listUserPosts(userId: userId))
+            .validate(statusCode: 200..<300)
+            .responseJSON{ response in
+                
+                guard response.result.isSuccess else{
+                    return
+                }
+                if let data = response.data {
+                    do {
+                        let jsonDictionary = try(JSONSerialization.jsonObject(with: data, options: .mutableContainers)) as![String:AnyObject]
+                        let remotePosts = Post.from([jsonDictionary])
+                        self.posts = remotePosts
+                        onSuccess(self.posts)
+                        
+                    }
+                    catch{
+                        onFailure(.networkError(error: error.localizedDescription))
+                    }
+                }
+        }
     }
     
-    func numberOfPosts() -> Int {
+    
+    public func numberOfPosts() -> Int {
         return posts.count
     }
     
-    func postAtIndex(index: Int) -> Post {
+    public func postAtIndex(index: Int) -> Post {
         return posts[index]
     }
 }

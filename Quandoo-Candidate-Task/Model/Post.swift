@@ -10,10 +10,33 @@ import Foundation
 
 
 public struct Post {
+    
+    // MARK: - Instance Properties
     public let userId : Int
     public let id : Int
     public let title : String
     public let body : String
+    
+    // MARK: - Object Lifecycle
+    public init?(dictionary: [String : Any]) {
+        guard let id = dictionary["id"] as? Int,
+            let userId = dictionary["userId"] as? Int,
+            let title = dictionary["title"] as? String,
+            let body = dictionary["body"] as? String else {
+                return nil
+        }
+        self.id = id
+        self.userId = userId
+        self.title = title
+        self.body = body
+    }
+    
+    // MARK: - Load from Dictionary Array
+    public static func from(_ array: [[String : Any]]) -> [Post] {
+        return array.map { Post(dictionary: $0) }
+            .filter { $0 != nil }
+            .map { $0! }
+    }
 }
 
 extension Post : CustomStringConvertible{

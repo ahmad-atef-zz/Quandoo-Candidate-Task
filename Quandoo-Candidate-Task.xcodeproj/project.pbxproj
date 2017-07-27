@@ -29,6 +29,8 @@
 		012B9FEF1F298F0D000F1762 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 012B9FEE1F298F0D000F1762 /* OpenSans-Light.ttf */; };
 		012B9FF11F299112000F1762 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B9FF01F299112000F1762 /* UserCell.swift */; };
 		01795E1A1F29952D007FC0DE /* ResuableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01795E191F29952D007FC0DE /* ResuableView.swift */; };
+		018952461F29DA6800D0929A /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018952451F29DA6800D0929A /* PostViewModel.swift */; };
+		018952481F29DB6000D0929A /* LocalPostCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018952471F29DB6000D0929A /* LocalPostCollection.swift */; };
 		01BB379D1F299854001518F7 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB379C1F299854001518F7 /* UserViewModel.swift */; };
 		01BB379F1F29CFBC001518F7 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB379E1F29CFBC001518F7 /* PostService.swift */; };
 		01BB37A11F29D21C001518F7 /* CloudPostCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB37A01F29D21C001518F7 /* CloudPostCollection.swift */; };
@@ -60,6 +62,8 @@
 		012B9FEE1F298F0D000F1762 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		012B9FF01F299112000F1762 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		01795E191F29952D007FC0DE /* ResuableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResuableView.swift; sourceTree = "<group>"; };
+		018952451F29DA6800D0929A /* PostViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		018952471F29DB6000D0929A /* LocalPostCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPostCollection.swift; sourceTree = "<group>"; };
 		01BB379C1F299854001518F7 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		01BB379E1F29CFBC001518F7 /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		01BB37A01F29D21C001518F7 /* CloudPostCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudPostCollection.swift; sourceTree = "<group>"; };
@@ -196,8 +200,10 @@
 				012B9FDD1F29622F000F1762 /* UserService.swift */,
 				012B9FE31F296AD9000F1762 /* CloudUserCollection.swift */,
 				012B9FDB1F295407000F1762 /* LocalUserCollection.swift */,
+				018952451F29DA6800D0929A /* PostViewModel.swift */,
 				01BB379E1F29CFBC001518F7 /* PostService.swift */,
 				01BB37A01F29D21C001518F7 /* CloudPostCollection.swift */,
+				018952471F29DB6000D0929A /* LocalPostCollection.swift */,
 				012B9FDF1F296304000F1762 /* TaskServiceError.swift */,
 			);
 			path = ViewModel;
@@ -376,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				012B9FD31F294D12000F1762 /* Address.swift in Sources */,
+				018952481F29DB6000D0929A /* LocalPostCollection.swift in Sources */,
 				012B9FE21F2963AC000F1762 /* Post.swift in Sources */,
 				012B9FF11F299112000F1762 /* UserCell.swift in Sources */,
 				012B9FE01F296304000F1762 /* TaskServiceError.swift in Sources */,
@@ -393,6 +400,7 @@
 				012B9FD11F294D06000F1762 /* Geo.swift in Sources */,
 				012B9FE71F297349000F1762 /* Router.swift in Sources */,
 				01795E1A1F29952D007FC0DE /* ResuableView.swift in Sources */,
+				018952461F29DA6800D0929A /* PostViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
