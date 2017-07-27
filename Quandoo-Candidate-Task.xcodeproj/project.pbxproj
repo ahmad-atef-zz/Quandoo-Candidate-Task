@@ -31,6 +31,8 @@
 		01795E1A1F29952D007FC0DE /* ResuableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01795E191F29952D007FC0DE /* ResuableView.swift */; };
 		018952461F29DA6800D0929A /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018952451F29DA6800D0929A /* PostViewModel.swift */; };
 		018952481F29DB6000D0929A /* LocalPostCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018952471F29DB6000D0929A /* LocalPostCollection.swift */; };
+		0189524A1F29E1BA00D0929A /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 018952491F29E1BA00D0929A /* OpenSans-Bold.ttf */; };
+		0189524C1F29E29C00D0929A /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0189524B1F29E29C00D0929A /* PostCell.swift */; };
 		01BB379D1F299854001518F7 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB379C1F299854001518F7 /* UserViewModel.swift */; };
 		01BB379F1F29CFBC001518F7 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB379E1F29CFBC001518F7 /* PostService.swift */; };
 		01BB37A11F29D21C001518F7 /* CloudPostCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB37A01F29D21C001518F7 /* CloudPostCollection.swift */; };
@@ -64,6 +66,8 @@
 		01795E191F29952D007FC0DE /* ResuableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResuableView.swift; sourceTree = "<group>"; };
 		018952451F29DA6800D0929A /* PostViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		018952471F29DB6000D0929A /* LocalPostCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPostCollection.swift; sourceTree = "<group>"; };
+		018952491F29E1BA00D0929A /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		0189524B1F29E29C00D0929A /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		01BB379C1F299854001518F7 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		01BB379E1F29CFBC001518F7 /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		01BB37A01F29D21C001518F7 /* CloudPostCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudPostCollection.swift; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 				012B9FCA1F294C99000F1762 /* LaunchScreen.storyboard */,
 				012B9FCB1F294C99000F1762 /* Main.storyboard */,
 				012B9FF01F299112000F1762 /* UserCell.swift */,
+				0189524B1F29E29C00D0929A /* PostCell.swift */,
 				01795E191F29952D007FC0DE /* ResuableView.swift */,
 			);
 			path = Views;
@@ -229,6 +234,7 @@
 		012B9FEB1F298E95000F1762 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				018952491F29E1BA00D0929A /* OpenSans-Bold.ttf */,
 				012B9FEE1F298F0D000F1762 /* OpenSans-Light.ttf */,
 				012B9FEC1F298E95000F1762 /* OpenSans-Regular.ttf */,
 			);
@@ -318,6 +324,7 @@
 			files = (
 				012B9FCC1F294C99000F1762 /* LaunchScreen.storyboard in Resources */,
 				012B9FC91F294C80000F1762 /* Info.plist in Resources */,
+				0189524A1F29E1BA00D0929A /* OpenSans-Bold.ttf in Resources */,
 				012B9FEF1F298F0D000F1762 /* OpenSans-Light.ttf in Resources */,
 				012B9FC71F294C6A000F1762 /* Assets.xcassets in Resources */,
 				012B9FD71F295268000F1762 /* Users.plist in Resources */,
@@ -395,6 +402,7 @@
 				012B9FC51F294C52000F1762 /* AppDelegate.swift in Sources */,
 				01BB379D1F299854001518F7 /* UserViewModel.swift in Sources */,
 				012B9FD51F294D26000F1762 /* Company.swift in Sources */,
+				0189524C1F29E29C00D0929A /* PostCell.swift in Sources */,
 				012B9FE91F298DCE000F1762 /* UserPostsViewController.swift in Sources */,
 				012B9FC21F294C42000F1762 /* UsersViewController.swift in Sources */,
 				012B9FD11F294D06000F1762 /* Geo.swift in Sources */,

@@ -51,10 +51,9 @@ public enum Router : URLRequestConvertible{
         
         let url = URL(string: Router.baseURLString)
         var request = URLRequest(url: (url?.appendingPathComponent(result.path))!)
-        print(request)
         request.httpMethod = result.method.rawValue
         request.cachePolicy = .reloadIgnoringLocalAndRemoteCacheData
         request.timeoutInterval = timeoutInterval
-        return try URLEncoding.default.encode(request, with: parameters)
+        return request
     }
 }

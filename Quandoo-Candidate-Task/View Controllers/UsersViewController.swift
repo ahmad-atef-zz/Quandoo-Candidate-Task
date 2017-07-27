@@ -15,6 +15,7 @@ class UsersViewController: UIViewController {
     
     //MARK: - IBOutlet -
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -22,6 +23,7 @@ class UsersViewController: UIViewController {
         loadData()
     }
 
+    // MARK: - Basic Functionality
     func loadData() {
         viewModel = UserViewModel (view: self)
         viewModel?.loadData()
@@ -63,19 +65,24 @@ extension UsersViewController : UITableViewDelegate, UITableViewDataSource{
     }
 }
 
+
+
+// MARK: - UserViewable
 extension UsersViewController : UserViewable{
     
     func onDidStartLoading() {
         print("Loading......")
+        spinner.startAnimating()
     }
     
     
     func onDidFinishLoadingData() {
         self.tableView.reloadData()
+        spinner.stopAnimating()
     }
     
     func onDidFailLoadingDataWithError(error: String) {
-        
+        spinner.stopAnimating()
     }
 
 }

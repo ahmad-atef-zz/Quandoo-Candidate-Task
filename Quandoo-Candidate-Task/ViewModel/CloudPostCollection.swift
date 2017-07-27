@@ -1,4 +1,4 @@
-//
+
 //  CloudPostCollection.swift
 //  Quandoo-Candidate-Task
 //
@@ -23,7 +23,8 @@ public class CloudPostCollection: PostService {
                               onSuccess: @escaping ([Post]) -> (),
                               onFailure: @escaping (TaskServiceError) -> ()) {
         
-        Alamofire.request(Router.listUserPosts(userId: userId))
+        Alamofire.request("\(Router.baseURLString)posts?userId=\(userId)",
+            encoding: URLEncoding(destination: .queryString))
             .validate(statusCode: 200..<300)
             .responseJSON{ response in
                 
@@ -32,8 +33,8 @@ public class CloudPostCollection: PostService {
                 }
                 if let data = response.data {
                     do {
-                        let jsonDictionary = try(JSONSerialization.jsonObject(with: data, options: .mutableContainers)) as![String:AnyObject]
-                        let remotePosts = Post.from([jsonDictionary])
+                        let jsonDictionary = try(JSONSerialization.jsonObject(with: data, options: .mutableContainers)) as![[String:AnyObject]]
+                        let remotePosts = Post.from(jsonDictionary)
                         self.posts = remotePosts
                         onSuccess(self.posts)
                         
@@ -44,7 +45,6 @@ public class CloudPostCollection: PostService {
                 }
         }
     }
-    
     
     public func numberOfPosts() -> Int {
         return posts.count

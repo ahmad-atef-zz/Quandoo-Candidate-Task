@@ -37,6 +37,7 @@ public class PostViewModel : PostDataSourceProtcol{
     
     //MARK: - PostDataSourceProtcol -
     public func loadData(){
+        delegateView.onDidStartLoading()
         self.loadData(userId: "\(userObject.id)")
     }
     

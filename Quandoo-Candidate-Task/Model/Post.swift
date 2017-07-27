@@ -11,7 +11,6 @@ import Foundation
 
 public struct Post {
     
-    // MARK: - Instance Properties
     public let userId : Int
     public let id : Int
     public let title : String
