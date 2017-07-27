@@ -8,10 +8,11 @@
 
 import Foundation
 
+
+// MARK: - UserViewable
 /// Protcol for all UserViewable, the consumers are someone who is intersted in implmenting the User Viewing functions, like reloading data or Showing Errors.
 
 public protocol UserViewable {
-    
     func onDidStartLoading()
     func onDidFinishLoadingData()
     func onDidFailLoadingDataWithError(error:String)
@@ -19,29 +20,52 @@ public protocol UserViewable {
 
 
 
+// MARK: - UserDataSourceProtcol
+/// Protocol for all User data source operations like loading data, from Cloud or Local service. Use this as a data source for View Model.
+protocol UserDataSourceProtcol {
+    
+    /// Use this method to list data from any diffrent services [Remote or Local].
+    func loadData()
+}
+
+
+extension UserDataSourceProtcol{
+    
+    /// Use this Optional Function to Configure Use cell, NOT every datasource View model Must iplment it, It's optionalm you can implment it and make it reflect on your ViewModel calss like @UserViewModel or to leave it without projection on your class.
+    ///
+    /// - Parameters:
+    ///   - cell: to be Configured cell
+    ///   - user: data for the cell
+    /// - Returns: Readlly Configured cell
+    func setupCell(cell : UserCell, user :User) -> UserCell { return UserCell() }
+}
+
+
 /// Enum to switch between Data Collection Types [Remote - Local]
 ///
 /// - local: load users from Mock Object.
 /// - remote: load users from API side.
 
-public enum dataCollectorType {
+public enum DataCollectorType {
     case local, remote
 }
 
 
 
-public class UserViewModel {
+public class UserViewModel : UserDataSourceProtcol{
     
     // MARK: - Injected Properties
     let dataCollector : UserService = DataCollectorFactory.getDataCollection(type: .remote)
     private let delegateView : UserViewable
     
+    // MARK: - Object Lifecycle
     init(view : UserViewable) {
         self.delegateView = view
     }
     
-    func loadData()
-    {
+    
+    // MARK: - UserDataSourceProtcol
+    func loadData(){
         delegateView.onDidStartLoading()
         dataCollector.loadUsers(onSuccess: { (result) in
             self.delegateView.onDidFinishLoadingData()
@@ -67,7 +91,11 @@ public class UserViewModel {
 
 public class DataCollectorFactory {
     
-    class func getDataCollection(type : dataCollectorType) -> UserService {
+    /// Use this class method to generate UserService instance based on the dataCollectorType instance type.
+    ///
+    /// - Parameter type: DataCollectorType enum and based on thatm the type of Service are Returned.
+    /// - Returns: User seervice instance that can load users and load user posts.
+    class func getDataCollection(type : DataCollectorType) -> UserService {
         switch type {
         case .local:
             return LocalUserCollection()
@@ -75,4 +103,5 @@ public class DataCollectorFactory {
             return CloudUserCollection()
         }
     }
+    
 }

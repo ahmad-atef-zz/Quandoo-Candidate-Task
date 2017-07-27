@@ -10,8 +10,14 @@ import UIKit
 
 class UserPostsViewController: UIViewController {
 
+    //MARK: - Properties -
+    var userObject : User?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(userObject!.id)
+        print(userObject!.description)
     }
 
 }

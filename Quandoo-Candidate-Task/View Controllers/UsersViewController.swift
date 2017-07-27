@@ -13,18 +13,28 @@ class UsersViewController: UIViewController {
     //MARK: - Properties -
     var viewModel : UserViewModel?
     
-    
     //MARK: - IBOutlet -
     @IBOutlet weak var tableView: UITableView!
     
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
     }
-    
+
     func loadData() {
         viewModel = UserViewModel (view: self)
         viewModel?.loadData()
+    }
+    
+    // MARK: - Segues
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow,
+            let userPostsPage = segue.destination as? UserPostsViewController else{return}
+     
+        let user = viewModel?.dataCollector.userAtIndex(index: indexPath.row)
+        userPostsPage.userObject = user
+        print(user!.username)
     }
 }
 
@@ -44,6 +54,12 @@ extension UsersViewController : UITableViewDelegate, UITableViewDataSource{
         let user = viewModel?.dataCollector.userAtIndex(index: indexPath.row)
         let cell = tableView.dequeueReusableCell(withIdentifier: UserCell.reuseIdentifier) as! UserCell
         return (viewModel?.setupCell(cell: cell, user: user!))!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //tableView.deselectRow(at: indexPath, animated: true)
+        let user = viewModel?.dataCollector.userAtIndex(index: indexPath.row)
+        self.performSegue(withIdentifier: "userPostsSegue", sender: user)
     }
 }
 
