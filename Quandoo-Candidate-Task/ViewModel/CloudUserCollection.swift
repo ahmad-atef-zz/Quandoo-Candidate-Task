@@ -36,8 +36,9 @@ class CloudUserCollection: UserService {
                 if let data = response.data {
                     do {
                         let jsonDictionary = try(JSONSerialization.jsonObject(with: data, options: .mutableContainers)) as![[String:AnyObject]]
-                        let users = User.from(jsonDictionary)
-                        onSuccess(users)
+                        let remoteUsers = User.from(jsonDictionary)
+                        self.users = remoteUsers
+                        onSuccess(self.users)
                     }
                     catch{
                         onFailure(.networkError(error: error.localizedDescription))
