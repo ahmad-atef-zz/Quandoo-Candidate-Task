@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "018952551F29FC7E00D0929A"
+               BuildableName = "QuandooTests.xctest"
+               BlueprintName = "QuandooTests"
+               ReferencedContainer = "container:Quandoo-Candidate-Task.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "018952671F2A01F800D0929A"
+               BuildableName = "QuandooIntegrationTests.xctest"
+               BlueprintName = "QuandooIntegrationTests"
+               ReferencedContainer = "container:Quandoo-Candidate-Task.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

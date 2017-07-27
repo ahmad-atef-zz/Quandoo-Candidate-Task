@@ -33,4 +33,14 @@ public protocol UserService{
     /// - Parameter index: index to subscript with it in the users list.
     /// - Returns: return the user at speific index.
     func userAtIndex(index : Int) -> User
+    
+    func loadDataLocally()
+}
+
+
+
+extension UserService {
+    public func loadDataLocally() {
+        
+    }
 }

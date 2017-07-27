@@ -40,7 +40,7 @@ public enum Router : URLRequestConvertible{
             }
         }()
         
-        let parameters: [String: Any] = {
+        let _: [String: Any] = {
             switch self {
             case .listUsers():
                 return [:]

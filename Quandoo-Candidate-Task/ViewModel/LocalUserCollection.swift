@@ -50,18 +50,6 @@ public class LocalUserCollection : UserService{
     }
     
     
-    /// Use this method to load user [Post].
-    ///
-    /// - Parameters:
-    ///   - userId: the id of the user that you want to load his posts.
-    ///   - onSuccess: success clousre with list of loaded posts for the user.
-    ///   - onFailure: failur clousre when error occures on loading user posts with a TaskServiceError object.
-    public func loadUserPosts(userId: String,
-                              onSuccess: @escaping ([Post]) -> (),
-                              onFailure: @escaping (TaskServiceError) -> ()) {
-        
-    }
-    
     // MARK: - Helper Methods
     /// Use this method to load the users from the plist name in the given bundle.
     ///
@@ -72,6 +60,13 @@ public class LocalUserCollection : UserService{
         let array = NSArray(contentsOfFile: path) as! [[String : Any]]
         let localUsers = User.from(array)
         success(localUsers)
+    }
+    
+    public func loadDataLocally() {
+        print("KOKOK")
+        loadUsers(fromPlistNamed: "Users") { (localUsers) in
+            self.users = localUsers
+        }
     }
 }
 

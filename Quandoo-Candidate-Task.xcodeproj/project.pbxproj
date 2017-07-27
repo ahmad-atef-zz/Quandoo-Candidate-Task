@@ -33,11 +33,31 @@
 		018952481F29DB6000D0929A /* LocalPostCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018952471F29DB6000D0929A /* LocalPostCollection.swift */; };
 		0189524A1F29E1BA00D0929A /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 018952491F29E1BA00D0929A /* OpenSans-Bold.ttf */; };
 		0189524C1F29E29C00D0929A /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0189524B1F29E29C00D0929A /* PostCell.swift */; };
+		018952511F29FB9A00D0929A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018952501F29FB9A00D0929A /* Color.swift */; };
+		018952631F29FD1F00D0929A /* LocalUserCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018952621F29FD1F00D0929A /* LocalUserCollectionTests.swift */; };
+		0189526B1F2A01F800D0929A /* QuandooIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0189526A1F2A01F800D0929A /* QuandooIntegrationTests.swift */; };
 		01BB379D1F299854001518F7 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB379C1F299854001518F7 /* UserViewModel.swift */; };
 		01BB379F1F29CFBC001518F7 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB379E1F29CFBC001518F7 /* PostService.swift */; };
 		01BB37A11F29D21C001518F7 /* CloudPostCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB37A01F29D21C001518F7 /* CloudPostCollection.swift */; };
 		C0D359E20F1B360C29322165 /* Pods_Quandoo_Candidate_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D91134A44A4485F5142C4A /* Pods_Quandoo_Candidate_Task.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0189525B1F29FC7E00D0929A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 012B9F981F29489E000F1762 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 012B9F9F1F29489E000F1762;
+			remoteInfo = "Quandoo-Candidate-Task";
+		};
+		0189526D1F2A01F800D0929A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 012B9F981F29489E000F1762 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 012B9F9F1F29489E000F1762;
+			remoteInfo = "Quandoo-Candidate-Task";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		012B9FA01F29489E000F1762 /* Quandoo-Candidate-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quandoo-Candidate-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +78,7 @@
 		012B9FDF1F296304000F1762 /* TaskServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskServiceError.swift; sourceTree = "<group>"; };
 		012B9FE11F2963AC000F1762 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		012B9FE31F296AD9000F1762 /* CloudUserCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudUserCollection.swift; sourceTree = "<group>"; };
-		012B9FE61F297349000F1762 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		012B9FE61F297349000F1762 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = ../Helpers/Router.swift; sourceTree = "<group>"; };
 		012B9FE81F298DCE000F1762 /* UserPostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPostsViewController.swift; sourceTree = "<group>"; };
 		012B9FEC1F298E95000F1762 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		012B9FEE1F298F0D000F1762 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
@@ -68,6 +88,13 @@
 		018952471F29DB6000D0929A /* LocalPostCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPostCollection.swift; sourceTree = "<group>"; };
 		018952491F29E1BA00D0929A /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		0189524B1F29E29C00D0929A /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		018952501F29FB9A00D0929A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		018952561F29FC7E00D0929A /* QuandooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuandooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0189525A1F29FC7E00D0929A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		018952621F29FD1F00D0929A /* LocalUserCollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalUserCollectionTests.swift; sourceTree = "<group>"; };
+		018952681F2A01F800D0929A /* QuandooIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuandooIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0189526A1F2A01F800D0929A /* QuandooIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuandooIntegrationTests.swift; sourceTree = "<group>"; };
+		0189526C1F2A01F800D0929A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01BB379C1F299854001518F7 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		01BB379E1F29CFBC001518F7 /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		01BB37A01F29D21C001518F7 /* CloudPostCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudPostCollection.swift; sourceTree = "<group>"; };
@@ -85,6 +112,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		018952531F29FC7E00D0929A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018952651F2A01F800D0929A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				012B9FA21F29489E000F1762 /* Quandoo-Candidate-Task */,
+				018952571F29FC7E00D0929A /* QuandooTests */,
+				018952691F2A01F800D0929A /* QuandooIntegrationTests */,
 				012B9FA11F29489E000F1762 /* Products */,
 				7E5F16C82F97340443252DF5 /* Pods */,
 				173FFB29C0465F13EDF3E48B /* Frameworks */,
@@ -102,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				012B9FA01F29489E000F1762 /* Quandoo-Candidate-Task.app */,
+				018952561F29FC7E00D0929A /* QuandooTests.xctest */,
+				018952681F2A01F800D0929A /* QuandooIntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,9 +159,8 @@
 				012B9FD81F29537B000F1762 /* ViewModel */,
 				012B9FB91F294968000F1762 /* Models */,
 				012B9FBE1F29499B000F1762 /* Views */,
-				012B9FE51F297322000F1762 /* Helpers */,
 				012B9FBA1F294973000F1762 /* Networking */,
-				012B9FB81F294956000F1762 /* Extensions */,
+				012B9FE51F297322000F1762 /* Helpers */,
 				012B9FBC1F294985000F1762 /* Supporting Files */,
 				012B9FEA1F298E95000F1762 /* Others */,
 				012B9FBB1F29497A000F1762 /* Resources */,
@@ -130,13 +174,6 @@
 				012B9FC41F294C52000F1762 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		012B9FB81F294956000F1762 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		012B9FB91F294968000F1762 /* Models */ = {
@@ -156,6 +193,7 @@
 		012B9FBA1F294973000F1762 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				012B9FE61F297349000F1762 /* Router.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -201,14 +239,8 @@
 		012B9FD81F29537B000F1762 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				01BB379C1F299854001518F7 /* UserViewModel.swift */,
-				012B9FDD1F29622F000F1762 /* UserService.swift */,
-				012B9FE31F296AD9000F1762 /* CloudUserCollection.swift */,
-				012B9FDB1F295407000F1762 /* LocalUserCollection.swift */,
-				018952451F29DA6800D0929A /* PostViewModel.swift */,
-				01BB379E1F29CFBC001518F7 /* PostService.swift */,
-				01BB37A01F29D21C001518F7 /* CloudPostCollection.swift */,
-				018952471F29DB6000D0929A /* LocalPostCollection.swift */,
+				0189524D1F29FAC000D0929A /* User */,
+				0189524E1F29FACC00D0929A /* Post */,
 				012B9FDF1F296304000F1762 /* TaskServiceError.swift */,
 			);
 			path = ViewModel;
@@ -217,7 +249,7 @@
 		012B9FE51F297322000F1762 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				012B9FE61F297349000F1762 /* Router.swift */,
+				0189524F1F29FB8B00D0929A /* Extensions */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -239,6 +271,70 @@
 				012B9FEC1F298E95000F1762 /* OpenSans-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0189524D1F29FAC000D0929A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				01BB379C1F299854001518F7 /* UserViewModel.swift */,
+				012B9FDD1F29622F000F1762 /* UserService.swift */,
+				012B9FE31F296AD9000F1762 /* CloudUserCollection.swift */,
+				012B9FDB1F295407000F1762 /* LocalUserCollection.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		0189524E1F29FACC00D0929A /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				018952451F29DA6800D0929A /* PostViewModel.swift */,
+				01BB379E1F29CFBC001518F7 /* PostService.swift */,
+				01BB37A01F29D21C001518F7 /* CloudPostCollection.swift */,
+				018952471F29DB6000D0929A /* LocalPostCollection.swift */,
+			);
+			name = Post;
+			sourceTree = "<group>";
+		};
+		0189524F1F29FB8B00D0929A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				018952501F29FB9A00D0929A /* Color.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		018952571F29FC7E00D0929A /* QuandooTests */ = {
+			isa = PBXGroup;
+			children = (
+				018952601F29FCA800D0929A /* Cases */,
+				018952611F29FCB300D0929A /* Supporting Files */,
+			);
+			path = QuandooTests;
+			sourceTree = "<group>";
+		};
+		018952601F29FCA800D0929A /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				018952621F29FD1F00D0929A /* LocalUserCollectionTests.swift */,
+			);
+			name = Cases;
+			sourceTree = "<group>";
+		};
+		018952611F29FCB300D0929A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0189525A1F29FC7E00D0929A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		018952691F2A01F800D0929A /* QuandooIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				0189526A1F2A01F800D0929A /* QuandooIntegrationTests.swift */,
+				0189526C1F2A01F800D0929A /* Info.plist */,
+			);
+			path = QuandooIntegrationTests;
 			sourceTree = "<group>";
 		};
 		173FFB29C0465F13EDF3E48B /* Frameworks */ = {
@@ -281,6 +377,42 @@
 			productReference = 012B9FA01F29489E000F1762 /* Quandoo-Candidate-Task.app */;
 			productType = "com.apple.product-type.application";
 		};
+		018952551F29FC7E00D0929A /* QuandooTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0189525D1F29FC7E00D0929A /* Build configuration list for PBXNativeTarget "QuandooTests" */;
+			buildPhases = (
+				018952521F29FC7E00D0929A /* Sources */,
+				018952531F29FC7E00D0929A /* Frameworks */,
+				018952541F29FC7E00D0929A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0189525C1F29FC7E00D0929A /* PBXTargetDependency */,
+			);
+			name = QuandooTests;
+			productName = QuandooTests;
+			productReference = 018952561F29FC7E00D0929A /* QuandooTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		018952671F2A01F800D0929A /* QuandooIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0189526F1F2A01F800D0929A /* Build configuration list for PBXNativeTarget "QuandooIntegrationTests" */;
+			buildPhases = (
+				018952641F2A01F800D0929A /* Sources */,
+				018952651F2A01F800D0929A /* Frameworks */,
+				018952661F2A01F800D0929A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0189526E1F2A01F800D0929A /* PBXTargetDependency */,
+			);
+			name = QuandooIntegrationTests;
+			productName = QuandooIntegrationTests;
+			productReference = 018952681F2A01F800D0929A /* QuandooIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -296,6 +428,19 @@
 						DevelopmentTeam = LG4XB4J5E3;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+					};
+					018952551F29FC7E00D0929A = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = LG4XB4J5E3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 012B9F9F1F29489E000F1762;
+					};
+					018952671F2A01F800D0929A = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = LG4XB4J5E3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 012B9F9F1F29489E000F1762;
 					};
 				};
 			};
@@ -313,6 +458,8 @@
 			projectRoot = "";
 			targets = (
 				012B9F9F1F29489E000F1762 /* Quandoo-Candidate-Task */,
+				018952551F29FC7E00D0929A /* QuandooTests */,
+				018952671F2A01F800D0929A /* QuandooIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -330,6 +477,20 @@
 				012B9FD71F295268000F1762 /* Users.plist in Resources */,
 				012B9FED1F298E95000F1762 /* OpenSans-Regular.ttf in Resources */,
 				012B9FCD1F294C99000F1762 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018952541F29FC7E00D0929A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018952661F2A01F800D0929A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +562,7 @@
 				01BB37A11F29D21C001518F7 /* CloudPostCollection.swift in Sources */,
 				012B9FC51F294C52000F1762 /* AppDelegate.swift in Sources */,
 				01BB379D1F299854001518F7 /* UserViewModel.swift in Sources */,
+				018952511F29FB9A00D0929A /* Color.swift in Sources */,
 				012B9FD51F294D26000F1762 /* Company.swift in Sources */,
 				0189524C1F29E29C00D0929A /* PostCell.swift in Sources */,
 				012B9FE91F298DCE000F1762 /* UserPostsViewController.swift in Sources */,
@@ -412,7 +574,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		018952521F29FC7E00D0929A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018952631F29FD1F00D0929A /* LocalUserCollectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018952641F2A01F800D0929A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0189526B1F2A01F800D0929A /* QuandooIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0189525C1F29FC7E00D0929A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 012B9F9F1F29489E000F1762 /* Quandoo-Candidate-Task */;
+			targetProxy = 0189525B1F29FC7E00D0929A /* PBXContainerItemProxy */;
+		};
+		0189526E1F2A01F800D0929A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 012B9F9F1F29489E000F1762 /* Quandoo-Candidate-Task */;
+			targetProxy = 0189526D1F2A01F800D0929A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		012B9FB21F29489E000F1762 /* Debug */ = {
@@ -543,6 +734,65 @@
 			};
 			name = Release;
 		};
+		0189525E1F29FC7E00D0929A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = LG4XB4J5E3;
+				INFOPLIST_FILE = QuandooTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmad.atef.QuandooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quandoo-Candidate-Task.app/Quandoo-Candidate-Task";
+			};
+			name = Debug;
+		};
+		0189525F1F29FC7E00D0929A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = LG4XB4J5E3;
+				INFOPLIST_FILE = QuandooTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmad.atef.QuandooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quandoo-Candidate-Task.app/Quandoo-Candidate-Task";
+			};
+			name = Release;
+		};
+		018952701F2A01F800D0929A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LG4XB4J5E3;
+				INFOPLIST_FILE = QuandooIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmad.atef.QuandooIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quandoo-Candidate-Task.app/Quandoo-Candidate-Task";
+			};
+			name = Debug;
+		};
+		018952711F2A01F800D0929A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LG4XB4J5E3;
+				INFOPLIST_FILE = QuandooIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmad.atef.QuandooIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quandoo-Candidate-Task.app/Quandoo-Candidate-Task";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -563,6 +813,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		0189525D1F29FC7E00D0929A /* Build configuration list for PBXNativeTarget "QuandooTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0189525E1F29FC7E00D0929A /* Debug */,
+				0189525F1F29FC7E00D0929A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0189526F1F2A01F800D0929A /* Build configuration list for PBXNativeTarget "QuandooIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018952701F2A01F800D0929A /* Debug */,
+				018952711F2A01F800D0929A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
